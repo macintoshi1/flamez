@@ -11,7 +11,7 @@ header {
   position: relative;
   text-align: center;
   height: 110vh;
-  background-image: url(../img/BeachSunset.png), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
+  background-image: url(img/BeachSunset.png), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
   background-size: cover;
   background-blend-mode: overlay; /* レイヤーを重ねるためのブレンドモード */
   color: #fff;
