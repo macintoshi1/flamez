@@ -1,0 +1,493 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  height: 110vh;
+  background-image: url(../img/BeachSunset.png), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
+  background-size: cover;
+  background-blend-mode: overlay; /* レイヤーを重ねるためのブレンドモード */
+  color: #fff;
+  margin: 0;
+  display: flex; /* Flexbox を使用して要素を中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+  padding: 0 16px;
+}
+
+.logo {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  line-height: 64px;
+}
+
+.logo h1 {
+  font-size: 16px;
+  opacity: .8;
+}
+
+.logo h1 div {
+  position: absolute;
+  top: 24px;
+  left: 56px;
+  width: 240px;
+  height: 24px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+}
+
+.menu ul {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 32px;
+}
+
+.menu li:not(:last-child)::after {
+  content: "|"; /* メニューの項目の間に縦線を挿入 */
+  color: white; /* 縦線の色 */
+  padding-left: 32px; /* 縦線と次の項目との間隔 */
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: white;
+  opacity: .8;
+}
+
+.title {
+  opacity: .8;
+}
+
+.container {
+  width: 1280px;
+  height: auto;
+  /* display: inline-flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.inner-container {
+  width: 1280px;
+  height: auto;
+  /* position: relative; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.img-large {
+  width: 1440px;
+  height: 712px;
+}
+
+.overlay {
+  width: 1257px;
+  height: 711px;
+  opacity: 0.20;
+  background: #666666;
+}
+
+.img-small {
+  width: 39px;
+  height: 55px;
+}
+
+.nav-links {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.brand-name {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3.20px;
+  word-wrap: break-word;
+}
+
+.headline {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.content-container {
+  display: flex; /* フレックスボックスで要素を横並びにする */
+  align-items: flex-start; /* 要素を垂直方向に中央揃え */;
+  gap: 48px; /* 要素間に20pxのスペース */
+  width: 960px;
+  margin: 88px auto 0;
+}
+
+.div-box {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.box-gray {
+  background: #D9D9D9;
+}
+
+.box-gray-large {
+  width: 480px;
+  height: auto;
+}
+
+.box-gray-full {
+  margin-top: 88px;
+  width: 1440px;
+  height: auto;
+}
+
+.relative-box {
+  position: relative; /* ポジションを相対位置に設定 */
+  width: 20%; /* 幅を20%に設定 */
+  display: flex; /* フレックスボックスでアイテムを横並びにする */
+  align-items: flex-start; /* アイテムを垂直方向の中心に配置 */
+}
+
+.absolute-text {
+  position: relative; /* 絶対位置から相対位置に変更 */
+  font-size: 0.75em; /* フォントサイズを小さく設定 */
+  background-color: transparent; /* 背景色を設定 */
+  padding: 5px 10px; /* パディングを設定 */
+  white-space: nowrap; /* 改行を防ぐ */
+  margin-left: 10px; /* 左側の余白を設定 */
+}
+
+
+.small-box {
+  width: 50px; /* 幅を50pxに設定 */
+  height: 50px; /* 高さを50pxに設定 */
+  background-color: #cc0000; /* 背景色を赤色に設定 */
+  order: -1; /* フレックスボックス内での順序を先頭にする */
+}
+
+.div-box-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.box-gray-medium {
+  width: 192px;
+  height: 116px;
+}
+
+.small-box {
+  width: 12px;
+  height: 24px;
+  background: #ff6666;
+}
+
+.relative-box {
+  height: 24px;
+  position: relative;
+}
+
+.absolute-text {
+  padding: 0;
+  margin-left: 20px;
+  position: absolute;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.section-title {
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-top: 32px;
+}
+
+.description {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  word-wrap: break-word;
+  margin-top: 32px;
+}
+
+.box-gray.full {
+  width: 1440px;
+  height: 485px;
+  margin-top: 64px;
+}
+
+.tag {
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+#vision {
+  background-color: #efefef;
+  width: 1440px;
+  height: 480px;
+  margin-top: 64px;
+}
+
+.cta-button {
+  margin-top: 32px;
+  width: 224px;
+  height: 38px;
+  position: relative;
+}
+
+.cta-box {
+  width: 224px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #D9D9D9;
+}
+
+.cta-text {
+  left: 58px;
+  top: 8px;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  font-family: Gill Sans, sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+.sub-section-title {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#categories {
+  width: 960px;
+  margin-top: 64px;
+}
+
+.category-boxes {
+  display: flex;
+}
+
+.box-gray-category {
+  width: calc((100% - 32px * 2) / 3);
+  height: auto;
+  background-color: #cccccc;
+  margin: 16px auto;
+  padding-bottom: 32px;
+  justify-content: space-between;
+}
+
+.category-title {
+  margin: 12px 0 0 12px;
+  font-weight: bold;
+}
+
+.category-image {
+  width: 64px;
+  height: 64px;
+  margin: 32px 16px 0;
+}
+
+.description-category {
+  margin: 32px 16px 0;
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  margin-left: 8px;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  margin-top: 32px;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+#cxo {
+  width: 1440px;
+  height: 560px;
+  margin-top: 64px;
+  background-color: #efefef;
+  display: flex;
+}
+
+.cxo-container {
+  display: flex;
+  width: 960px;
+  margin: 72px auto 0;
+}
+
+#cxo .small-box {
+  position: relative;
+  top: -40px;
+  left: 440px;
+}
+
+#cxo .absolute-text {
+  position: relative;
+  top: -40px;
+  margin-top: 4px;
+  left: 428px;
+  /* margin-left: 8px; */
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -40px;
+}
+
+.brand-footer {
+  letter-spacing: .6em;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 32px;
+}
+
+.FlamezLogo {
+  width: 160px;
+  height: auto;
+}
+
+.self-introductions {
+  display: flex;
+  margin-top: 20px;
+  gap: 80px;
+  position: relative;
+  left: 132px;
+}
+
+.self-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-photo {
+  width: 176px;
+  height: 176px;
+}
+
+.profile {
+  font-size: 14px;
+}
+
+.strength {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.profile span {
+  display: block;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+#contact {
+  width: 960px;
+  margin-top: 64px;
+}
+
+#contact .absolute-text {
+  margin-top: 4px;
+}
+
+.contact-boxes {
+  display: flex;
+  margin-top: 32px;
+}
+
+.contact-boxes {
+  width: 960px;
+  height: 440px;
+}
+
+.box-gray-contact {
+  width: 288px;
+  height: auto;
+  background-color: #cccccc;
+  margin: 32px auto;
+  padding-top: 32px;
+  /* padding-bottom: 32px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-name {
+  margin: 12px 0 0 12px;
+  font-weight: bold;
+}
+
+.qr {
+  width: 110px;
+  height: 132px;
+  margin: 32px 16px 0;
+}
+
+.description-contact {
+  margin: 32px 16px 0;
+  font-size: 14px;
+}
+
+.description-contact span {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;  
+}
+
+footer {
+  margin-top: 32px;
+  padding: 32px 0;
+  border-top: #ccc 2px solid;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* margin: 0 auto; */
+  text-align: center;
+
+}
