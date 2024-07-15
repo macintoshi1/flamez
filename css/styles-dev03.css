@@ -137,7 +137,7 @@ header {
 
 .relative-box {
   position: relative; /* ポジションを相対位置に設定 */
-  width: 20%; /* 幅を20%に設定 */
+  /* width: 20%; 幅を20%に設定 */
   display: flex; /* フレックスボックスでアイテムを横並びにする */
   align-items: flex-start; /* アイテムを垂直方向の中心に配置 */
 }
@@ -156,14 +156,6 @@ header {
   white-space: nowrap; /* 改行を防ぐ */
   margin-top: 2px;
   margin-left: 4px; /* 左側の余白を設定 */
-}
-
-
-/* .small-box { */
-  /* width: 50px; 幅を50pxに設定 */
-  /* height: 50px; 高さを50pxに設定 */
-  /* background-color: #cc0000; 背景色を赤色に設定 */
-  /* order: -1; フレックスボックス内での順序を先頭にする */
 }
 
 .adjust-space {
@@ -257,11 +249,6 @@ nav ul {
   height: 116px;
 }
 
-/* .relative-box {
-  height: 24px;
-  position: relative;
-} */
-
 
 .section-title {
   color: black;
@@ -300,12 +287,9 @@ nav ul {
 #vision-contents {
   background-color: #efefef;
   width: 100%;
-  /* height: 432px; */
   height: auto;
   margin-top: 64px;
   padding-top: 2px;
-  /* padding-bottom: 32px; */
-  /* padding-bottom: 64px; */
 }
 
 .cta-button {
@@ -384,9 +368,6 @@ nav ul {
 .icons {
   display: flex;
   margin-left: 8px;
-  /* position: relative;
-  bottom: 16px; */
-  /* left: 16px; */
 }
 
 .icon {
@@ -416,15 +397,9 @@ nav ul {
   margin: 64px auto 0;
 }
 
-/* .relative-box-cxo {
-  gap: 4px;
-} */
-
 #cxo .small-box {
   position: relative;
-  /* top: -56px;  */
   left: 400px;
-  /* margin-bottom: 16px; */
 }
 
 #cxo .absolute-text {
@@ -578,7 +553,7 @@ footer {
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
 
   html,
@@ -595,6 +570,14 @@ footer {
     height: 110vh;
   }
 
+  .small-box {
+    width: 12px;
+    height: 24px;
+    background: #ff6666;
+  }
+
+  /* introduction */
+
   #introduction .content-container {
     display: flex;
     flex-direction: column-reverse;
@@ -605,6 +588,8 @@ footer {
   .description {
     width: 480px;
   }
+
+  /* vision */
 
   #vision {
     width: 520px;
@@ -628,6 +613,8 @@ footer {
     justify-content: space-evenly;
   }
 
+  /* categories */
+
   #categories {
     display: flex;
     flex-direction: column;
@@ -648,15 +635,14 @@ footer {
 
   .box-gray-category {
     width: 320px;
-    /* height: auto;
-    background-color: #cccccc; */
     margin: 32px auto;
-    /* justify-content: space-between; */
   }
 
   .ses {
     padding-bottom: 16px;
   }
+
+  /* cxo */
 
   #cxo {
     height: auto;
@@ -670,17 +656,17 @@ footer {
     margin: 64px auto;
   }
 
+  #cxo .small-box {
+    left: 0;
+  }
+
   #cxo .absolute-text {
     position: relative;
     top: -20px;
     /* margin-top: 4px; */
     margin-bottom: 16px;
-    left: 0;
+    left: 12px;
     /* font-size: 16px; */
-  }
-
-  #cxo .small-box {
-    left: 0;
   }
 
   .cxo-content {
@@ -719,14 +705,6 @@ footer {
   }
 
 }
-
-/* .box-gray-category {
-  width: 100% - 32px * 2) / 3);
-  height: auto;
-  background-color: #cccccc;
-  margin: 32px auto;
-  justify-content: center;
-} */
 
 
 @media (max-width: 1000px) {
@@ -809,10 +787,6 @@ footer {
   .animate-link:focus {
     transform: scale(1.2);
   }
-
-  /* .title.hide {
-    display: none;
-  } */
 
   .overlay #close {
     display: block;
