@@ -259,15 +259,6 @@ nav ul {
   position: relative;
 }
 
-.absolute-text {
-  padding: 0;
-  margin-left: 20px;
-  position: absolute;
-  color: black;
-  font-size: 16px;
-  font-weight: 700;
-  word-wrap: break-word;
-}
 
 .section-title {
   color: black;
@@ -439,7 +430,7 @@ nav ul {
   /* margin-top: 4px; */
   margin-bottom: 16px;
   left: 440px;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .cxo-content {
@@ -519,7 +510,7 @@ nav ul {
 
 #contact .absolute-text {
   margin-top: 4px;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .contact-boxes {
@@ -618,6 +609,7 @@ footer {
 
   .category-contents {
     width: 480px;
+    margin: 0 auto;
   }
 
   .category-boxes {
@@ -656,7 +648,7 @@ footer {
     /* margin-top: 4px; */
     margin-bottom: 16px;
     left: 0;
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   #cxo .small-box {
