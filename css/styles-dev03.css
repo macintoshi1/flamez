@@ -135,21 +135,35 @@ header {
   width: 100%;
 }
 
+.relative-box {
+  position: relative; /* ポジションを相対位置に設定 */
+  width: 20%; /* 幅を20%に設定 */
+  display: flex; /* フレックスボックスでアイテムを横並びにする */
+  align-items: flex-start; /* アイテムを垂直方向の中心に配置 */
+}
+
+.small-box {
+  width: 12px;
+  height: 24px;
+  background: #ff6666;
+}
+
 .absolute-text {
   position: relative; /* 絶対位置から相対位置に変更 */
-  font-size: 0.75em; /* フォントサイズを小さく設定 */
+  font-size: 16px; /* フォントサイズを小さく設定 */
   background-color: transparent; /* 背景色を設定 */
-  padding: 5px 10px; /* パディングを設定 */
+  padding-top: 0; /* パディングを設定 */
   white-space: nowrap; /* 改行を防ぐ */
-  margin-left: 10px; /* 左側の余白を設定 */
+  margin-top: 2px;
+  margin-left: 4px; /* 左側の余白を設定 */
 }
 
 
-.small-box {
-  width: 50px; /* 幅を50pxに設定 */
-  height: 50px; /* 高さを50pxに設定 */
-  background-color: #cc0000; /* 背景色を赤色に設定 */
-  order: -1; /* フレックスボックス内での順序を先頭にする */
+/* .small-box { */
+  /* width: 50px; 幅を50pxに設定 */
+  /* height: 50px; 高さを50pxに設定 */
+  /* background-color: #cc0000; 背景色を赤色に設定 */
+  /* order: -1; フレックスボックス内での順序を先頭にする */
 }
 
 .adjust-space {
@@ -229,13 +243,6 @@ nav ul {
   height: auto;
 }
 
-.relative-box {
-  position: relative; /* ポジションを相対位置に設定 */
-  width: 20%; /* 幅を20%に設定 */
-  display: flex; /* フレックスボックスでアイテムを横並びにする */
-  align-items: flex-start; /* アイテムを垂直方向の中心に配置 */
-}
-
 /* vision */
 
 .div-box-vision {
@@ -250,16 +257,10 @@ nav ul {
   height: 116px;
 }
 
-.small-box {
-  width: 12px;
-  height: 24px;
-  background: #ff6666;
-}
-
-.relative-box {
+/* .relative-box {
   height: 24px;
   position: relative;
-}
+} */
 
 
 .section-title {
@@ -415,23 +416,23 @@ nav ul {
   margin: 64px auto 0;
 }
 
+/* .relative-box-cxo {
+  gap: 4px;
+} */
+
 #cxo .small-box {
   position: relative;
-  top: -56px;
-  left: 440px;
+  /* top: -56px;  */
+  left: 400px;
   /* margin-bottom: 16px; */
 }
-
-/* #cxo .part-title {
-  margin-bottom: 16px;
-} */
 
 #cxo .absolute-text {
   position: relative;
   top: -20px;
   /* margin-top: 4px; */
   margin-bottom: 16px;
-  left: 440px;
+  left: 412px;
   /* font-size: 16px; */
 }
 
@@ -464,7 +465,7 @@ nav ul {
 
 .self-introductions {
   display: flex;
-  margin-top: 20px;
+  margin-top: 32px;
   gap: 80px;
   position: relative;
   left: 132px;
