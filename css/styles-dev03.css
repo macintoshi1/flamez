@@ -18,13 +18,15 @@ header {
   height: 110vh;
   background-image: url(../img/mountains-6753786.jpg), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-blend-mode: overlay; /* レイヤーを重ねるためのブレンドモード */
   color: #fff;
   margin: 0;
   display: flex; /* Flexbox を使用して要素を中央揃え */
   align-items: center; /* 垂直方向の中央揃え */
   justify-content: center; /* 水平方向の中央揃え */
-  padding: 0 16px;
+  padding: 0;
 }
 
 .logo {
@@ -566,10 +568,16 @@ footer {
   }
   
   header {
+    background-image: url(../img/mountains_1000x1000.png), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
+  }
+  
+
+  header {
     width: 100%;
     margin: 0 auto;
     height: 120vh;
-    min-height: 960px;
+    min-height: 110vh;
+    object-fit: cover;
   }
 
   .inner-container {
