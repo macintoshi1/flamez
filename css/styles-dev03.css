@@ -558,8 +558,9 @@ footer {
 
   html,
   body {
-    margin: 0 auto;
+    width: 100%;
     min-width: 520px;
+    margin: 0 auto;
     /* width: 100%; */
     /* height: 100%; */
   }
@@ -569,6 +570,10 @@ footer {
     margin: 0 auto;
     height: 120vh;
     min-height: 960px;
+  }
+
+  .inner-container {
+    max-width: 560px;
   }
 
   .small-box {
@@ -703,6 +708,10 @@ footer {
 
   .box-gray-contact {
     width: 232px;
+  }
+
+  footer {
+    width: 100%;
   }
 
 }
