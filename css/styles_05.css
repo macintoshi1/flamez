@@ -1,0 +1,819 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 520px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+    min-width: 384px;
+}
+
+/* header */
+
+header {
+  position: relative;
+  text-align: center;
+  height: 110vh;
+  background-image: url(../img/mountains-6753786.jpg), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay; /* レイヤーを重ねるためのブレンドモード */
+  color: #fff;
+  margin: 0;
+  display: flex; /* Flexbox を使用して要素を中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  line-height: 64px;
+}
+
+.logo h1 {
+  font-size: 16px;
+  opacity: .8;
+}
+
+.logo h1 a {
+	text-decoration: none;
+	color: #fff
+}
+
+.logo h1 div {
+  position: absolute;
+  top: 24px;
+  left: 56px;
+  width: 240px;
+  height: 24px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  color: white;
+}
+
+.menu-pc ul {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  list-style: none;
+}
+
+.menu-pc ul {
+  display: flex;
+}
+
+.menu-pc li {
+  margin-left: 32px;
+}
+
+.menu-pc li:not(:last-child)::after {
+  content: "|"; /* メニューの項目の間に縦線を挿入 */
+  color: white; /* 縦線の色 */
+  padding-left: 32px; /* 縦線と次の項目との間隔 */
+}
+
+.menu-pc ul a {
+  text-decoration: none;
+  color: white;
+  opacity: .8;
+}
+
+.menu-sp {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+.title {
+  opacity: .8;
+}
+
+#pageTitle {
+  letter-spacing: .05em;
+}
+
+/* common */
+
+.container {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.inner-container {
+  width: 100%;
+  height: auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40vh);
+  transition: opacity 1.2s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#introduction,
+#vision,
+#categories,
+#cxo,
+#contact {
+  margin: 32px auto;
+  width: 100%;
+}
+
+.relative-box {
+  position: relative; /* ポジションを相対位置に設定 */
+  display: flex; /* フレックスボックスでアイテムを横並びにする */
+  align-items: flex-start; /* アイテムを垂直方向の中心に配置 */
+}
+
+.small-box {
+  width: 12px;
+  height: 24px;
+  background: #ff6666;
+}
+
+.absolute-text {
+  position: relative; /* 絶対位置から相対位置に変更 */
+  font-size: 16px; /* フォントサイズを小さく設定 */
+  background-color: transparent; /* 背景色を設定 */
+  padding-top: 0; /* パディングを設定 */
+  white-space: nowrap; /* 改行を防ぐ */
+  margin-top: 2px;
+  margin-left: 4px; /* 左側の余白を設定 */
+}
+
+.adjust-space {
+  height: 16px;
+}
+
+/* introduction */
+
+#introduction {
+  margin-bottom: 0;
+}
+
+.img-large {
+  width: 1440px;
+  height: 712px;
+}
+
+
+nav ul {
+  list-style-type: none;
+}
+
+.img-small {
+  width: 39px;
+  height: 55px;
+}
+
+.nav-links {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.brand-name {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3.20px;
+  word-wrap: break-word;
+}
+
+.headline {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.content-container {
+  display: flex; /* フレックスボックスで要素を横並びにする */
+  align-items: flex-start; /* 要素を垂直方向に中央揃え */;
+  gap: 48px; /* 要素間に20pxのスペース */
+  width: 960px;
+  margin: 64px auto;
+  padding-bottom: 64px;
+}
+
+.div-box {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+}
+
+.box-gray {
+  background: #D9D9D9;
+}
+
+.box-gray-large {
+  width: 480px;
+  height: auto;
+}
+
+.box-gray-full {
+  margin-top: 88px;
+  width: 1440px;
+  height: auto;
+}
+
+/* vision */
+
+.div-box-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.box-gray-medium {
+  width: 192px;
+  height: 116px;
+}
+
+
+.section-title {
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-top: 32px;
+}
+
+.description {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  word-wrap: break-word;
+  margin-top: 32px;
+}
+
+.box-gray.full {
+  width: 1440px;
+  height: 485px;
+  margin-top: 64px;
+}
+
+.tag {
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+#vision-contents {
+  background-color: #efefef;
+  width: 100%;
+  height: auto;
+  margin-top: 64px;
+  padding-top: 2px;
+}
+
+.cta-button {
+  margin-top: 32px;
+  width: 224px;
+  height: 38px;
+  position: relative;
+}
+
+.cta-box {
+  width: 224px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #D9D9D9;
+}
+
+.cta-text {
+  left: 58px;
+  top: 8px;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  font-family: Gill Sans, sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+.sub-section-title {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* categories */
+
+#categories {
+  width: 960px;
+  margin-top: 64px;
+  padding-top: 32px;
+}
+
+.category-boxes {
+  display: flex;
+}
+
+.box-gray-category {
+  width: calc((100% - 32px * 2) / 3);
+  height: auto;
+  background-color: #cccccc;
+  margin: 32px auto;
+  justify-content: space-between;
+}
+
+.category-title {
+  margin: 12px 0 0 12px;
+  font-weight: bold;
+}
+
+.category-image {
+  width: 120px;
+  height: 120px;
+  margin: 32px 16px 0;
+}
+
+.description-category {
+  margin: 32px 16px 0;
+  font-size: 14px;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  margin-left: 8px;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  margin-top: 32px;
+  margin-left: 8px;
+  margin-right: 0;
+  position: relative;
+  bottom: 16px;
+}
+
+/* cxo */
+
+#cxo {
+  width: 100%;
+  height: 560px;
+  margin-top: 64px;
+  padding-bottom: 32px;
+  background-color: #efefef;
+  display: flex;
+}
+
+.cxo-container {
+  display: flex;
+  width: 960px;
+  margin: 64px auto 0;
+}
+
+#cxo .small-box {
+  position: relative;
+  left: 400px;
+}
+
+#cxo .absolute-text {
+  position: relative;
+  top: -20px;
+  /* margin-top: 4px; */
+  margin-bottom: 16px;
+  left: 412px;
+  /* font-size: 16px; */
+}
+
+.cxo-content {
+  width: 960px;
+  display: flex ;
+  margin-top: 16px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -40px;
+}
+
+.brand-footer {
+  letter-spacing: .6em;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 32px;
+}
+
+.FlamezLogo {
+  width: 160px;
+  height: auto;
+}
+
+.self-introductions {
+  display: flex;
+  margin-top: 32px;
+  gap: 80px;
+  position: relative;
+  left: 132px;
+}
+
+.self-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-photo {
+  width: 176px;
+  height: 176px;
+}
+
+.profile {
+  font-size: 14px;
+}
+
+.strength {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.profile span {
+  display: block;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+/* #contact {
+  width: 960px;
+  margin-top: 64px;
+  padding-top: 32px;
+} */
+
+.contact-contents {
+  width: 960px;
+  margin: 32px auto;
+  padding-top: 32px;
+}
+
+#contact .absolute-text {
+  margin-top: 4px;
+  /* font-size: 16px; */
+}
+
+.contact-boxes {
+  display: flex;
+  margin-top: 32px;
+}
+
+.contact-boxes {
+  width: 960px;
+  height: 440px;
+}
+
+.box-gray-contact {
+  width: 288px;
+  height: auto;
+  background-color: #cccccc;
+  margin: 32px auto;
+  padding-top: 32px;
+  /* padding-bottom: 32px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-name {
+  margin: 12px 0 0 12px;
+  font-weight: bold;32
+}
+
+.qr {
+  width: 110px;
+  height: 132px;
+  margin: 32px 16px 0;
+}
+
+.description-contact {
+  margin: 32px 16px 0;
+  font-size: 14px;
+}
+
+.description-contact span {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;  
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto;
+  padding: 32px 0;
+  border-top: #ccc 2px solid;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1024px) {
+
+  /* common */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container, .inner-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-image: url(../img/mountains_1000x1000.png), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
+  }
+  
+
+  header {
+    width: 100%;
+    margin: 0 auto;
+    height: 120vh;
+    min-height: 110vh;
+    object-fit: cover;
+  }
+
+  .small-box {
+    width: 12px;
+    height: 24px;
+    background: #ff6666;
+  }
+
+  /* introduction */
+
+  #introduction .content-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 480px;
+    margin: 64px auto;
+  }
+
+  .description {
+    width: 480px;
+  }
+
+  /* vision */
+
+  #vision {
+    width: 520px;
+  }
+
+  #vision .content-container {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 64px auto;
+  }
+
+  #vision .content-container .div-box {
+    width: 480px;
+  }
+
+  .div-box-vision {
+    width: 480px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* categories */
+
+  #categories {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    margin: 64px auto;
+  }
+
+  .category-contents {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  .category-boxes {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .box-gray-category {
+    width: 320px;
+    margin: 32px auto;
+  }
+
+  .ses {
+    padding-bottom: 16px;
+  }
+
+  /* cxo */
+
+  #cxo {
+    height: auto;
+    width: 520px;
+  }
+
+  #cxo .cxo-container {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 64px auto;
+  }
+
+  #cxo .small-box {
+    left: 0;
+  }
+
+  #cxo .absolute-text {
+    position: relative;
+    top: -20px;
+    /* margin-top: 4px; */
+    margin-bottom: 16px;
+    left: 12px;
+    /* font-size: 16px; */
+  }
+
+  .cxo-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 480px;
+    margin: 0 auto;
+    gap: 108px;
+  }
+
+  .self-introductions {
+    display: flex;
+    margin-top: 20px;
+    gap: 80px;
+    position: relative;
+    left: 0;
+    justify-content: space-evenly;
+  }
+  
+  #contact {
+    width: 520px;
+  }
+
+  .contact-contents {
+    width: 480px;
+  }
+
+  .contact-boxes {
+    width: 480px;
+    height: 440px;
+    gap: 16px;
+  }
+
+  .box-gray-contact {
+    width: 232px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+
+  /* header */
+
+  .menu-pc {
+    display: none;
+  }
+
+  .menu-sp {
+    display: block;
+  }
+
+  .menu-sp #open {
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    color: #ddd;
+    font-size: 36px;
+    line-height: 64px;
+    cursor: pointer;
+  }
+
+  .menu-sp #open.hide {
+    display: none;
+  }
+
+  /* overlay */
+
+  .overlay {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 110vh;
+    opacity: 0.80;
+    background: #999;
+    z-index: 1;
+  }
+
+  .overlay nav {
+    display: block;
+    margin: 196px auto;
+    padding: 64px;
+  }
+
+  .overlay ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlay li {
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* opacity: 0; */
+    transform: translateY(32px); */
+    transition: opacity .3s, transform .3s;
+    position: relative;
+  }
+  
+  .overlay li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: color .2s;
+  }
+
+  .overlay.show {
+    display: block;
+    opacity: .8;
+    pointer-events: auto;
+    color: #ddd;
+  }
+
+  .animate-link {
+    transition: transform 3s ease-in-out;
+  }
+
+  .animate-link:focus {
+    transform: scale(1.2);
+  }
+
+  .overlay #close {
+    display: block;
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    color: #ddd;
+    font-size: 32px;
+    line-height: 64px;
+    cursor: pointer;
+  }
+  
+}
