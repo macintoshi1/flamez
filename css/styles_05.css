@@ -175,6 +175,7 @@ header {
 
 #introduction {
   margin-bottom: 0;
+  padding-top: 4px;
 }
 
 .img-large {
@@ -578,7 +579,7 @@ footer {
   header {
     width: 100%;
     margin: 0 auto;
-    height: 120vh;
+    height: 110vh;
     min-height: 110vh;
     object-fit: cover;
   }
@@ -744,6 +745,7 @@ footer {
     font-size: 36px;
     line-height: 64px;
     cursor: pointer;
+    z-index: 1000;
   }
 
   .menu-sp #open.hide {
@@ -753,6 +755,7 @@ footer {
   /* overlay */
 
   .overlay {
+    display: none;
     position: fixed;
     margin: 0;
     width: 100%;
@@ -795,6 +798,7 @@ footer {
     opacity: .8;
     pointer-events: auto;
     color: #ddd;
+    margin: 0;
   }
 
   .animate-link {
