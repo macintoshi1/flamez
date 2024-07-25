@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const openButton = document.getElementById('open');
   const overlay = document.querySelector('.overlay');
   const closeButton = document.getElementById('close');
-  const titleDiv = document.querySelector('.title');
-  const a = document.querySelectorAll('.a');
+  // const titleDiv = document.querySelector('.title');
+  // const a = document.querySelectorAll('.a');
 
   // スクロールによるフェードアウト効果
   window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    const maxScroll = window.innerHeight * 0.8;
-    pageTitle.style.opacity = Math.max(0, 1 - currentScroll / maxScroll);
+    const currentScroll = window.pageYOffset; // 現在のスクロール位置を取得
+    const maxScroll = window.innerHeight * 0.8; // フェードアウトが完全に終了する位置を計算
+    pageTitle.style.opacity = Math.max(0, 1 - currentScroll / maxScroll); // スクロール位置に応じてページタイトルの不透明度を設定
   });
 
   // ハンバーガーメニューの開閉機能
