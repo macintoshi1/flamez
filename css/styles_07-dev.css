@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-width: 520px;
+  /* min-width: 520px; */
   width: 100%;
 }
 
@@ -99,6 +99,10 @@ header {
 
 .title {
   opacity: .8;
+}
+
+.br-sp {
+  display: none;
 }
 
 #pageTitle {
@@ -543,10 +547,6 @@ nav ul {
     text-align: center;  
 }
 
-.contact-sp {
-  display: none;
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -582,6 +582,10 @@ footer {
     height: 110vh;
     min-height: 110vh;
     object-fit: cover;
+  }
+
+  .br-sp {
+    display: inline-block;
   }
 
   .container, .inner-container {
@@ -759,10 +763,6 @@ footer {
 
   .box-gray-contact {
     width: 172px;
-  }
-
-  .contact-sp {
-    display: inline-block;
   }
 
   /* .description-contact span {
