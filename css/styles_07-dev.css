@@ -543,6 +543,10 @@ nav ul {
     text-align: center;  
 }
 
+.contact-sp {
+  display: none;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -565,25 +569,25 @@ footer {
   body {
     width: 100%;
     margin: 0 auto;
-  }
-
-  .container, .inner-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    display: block;
   }
   
   header {
     background-image: url(../img/mountains_1000x1000.png), linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.5)); /* 背景画像とグレーの半透明レイヤー */
   }
   
-
   header {
     width: 100%;
     margin: 0 auto;
     height: 110vh;
     min-height: 110vh;
     object-fit: cover;
+  }
+
+  .container, .inner-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .small-box {
@@ -598,8 +602,13 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     /* width: 480px; */
-    width: 346px;
+    width: 375px;
     margin: 64px auto;
+  }
+
+  .div-box {
+    width: 346px;
+    margin: 0 auto;
   }
 
   .box-gray-large {
@@ -616,7 +625,7 @@ footer {
 
   #vision {
     /* width: 520px; */
-    width: 346px;
+    width: 375px;
   }
 
   #vision-contents {
@@ -628,7 +637,7 @@ footer {
     display: flex;
     flex-direction: column;
     /* width: 480px; */
-    width: 346px;
+    width: 375px;
     margin: 64px auto;
   }
 
@@ -742,15 +751,23 @@ footer {
 
   .contact-boxes {
     /* width: 480px; */
-    width: 375px;
+    width: 346px;
     height: 440px;
     gap: 2px;
     margin: 0 auto;
   }
 
   .box-gray-contact {
-    width: 180px;
+    width: 172px;
   }
+
+  .contact-sp {
+    display: inline-block;
+  }
+
+  /* .description-contact span {
+    display: inline-block;
+  } */
 
   footer {
     width: 100%;
